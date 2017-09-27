@@ -8,9 +8,13 @@ describe DockingStation do
        # it { is_expected.to respond_to :release_bike }
     end
     it "should create a new bike object" do
-     expect(subject.release_bike).to be_a Bike
+     expect {subject.release_bike}.to raise_error "Sorry, no bikes!"
     end
     it "should release a working bike" do
       expect(Bike.new.working?).to eq true
+    end
+    it "should dock a bike" do
+      bike = Bike.new # setting up the bike object for the test
+      expect(subject.dock(bike)).to eq bike
     end
 end
