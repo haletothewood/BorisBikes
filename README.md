@@ -13,14 +13,23 @@ Pair Partner: [Austin](https://github.com/andyrow123)
 Successes: 
 - Created and collaborated on single repo from two machines for the first time.
 - We made our first passing test!
-- We both struggle with slowing down and I think we called each other out on this in a really constructive way
+- We both struggle with slowing down and I think we called each other out on this in a really constructive way.
 - Learned how to fetch a singular file from a repository and merge with master using `git fetch` and `git checkout FETCH-HEAD`
 
 Struggles:
-- Ensuring that before moving onto another part of the challenge that I understand why something works or doesn't work
-- Remembering to `git pull` before adding any changes to the remote repo
+- Ensuring that before moving onto another part of the challenge that I understand why something works or doesn't work.
+- Remembering to `git pull` before adding any changes to the remote repo.
 
 #### Day Two
 
-Pair Partner:
+Pair Partner: [Olivia](https://github.com/oliviaberesford)
 
+Successes:
+- We created our first guard clauses using `fail`!
+- Delved deeper into understanding Feature Testing and Unit Testing.
+- Created methods to dock a bike and release a bike.
+- Worked really well together, and had fun!
+
+Struggles:
+- Finding the right documentation or information applicable to our problem at hand.
+- Ensuring the passing test is accuratley testing the feature correctly.
