@@ -39,11 +39,11 @@ Struggles:
 Pair Partner: [Jon](https://github.com/jonsanders101)
 
 Successes:
-- 
--
--
--
+- We really got stuck into feature testing and approaching each challenge with a test first mentality.
+- Learned a lot of new ruby syntax including how to access a classes constants with the `::` operator.
+- Understood the difference bewtween an `.` operator and an `@` when accessing an variable of class.
+- We created a method to report a broken bike, gave a default capacity to the docking station and it can hold multiple bikes.
 
 Struggles:
--
--
+- Figuring out why an instance variable was 'nil' after instantiating the class object in Rspec (we didn't assign it)
+- Being comfortable with completing only the simplest possible change to pass the test. 
