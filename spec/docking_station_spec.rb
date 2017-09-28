@@ -2,10 +2,6 @@ require 'docking_station'
 
 describe DockingStation do
 
-    it "should have a capacity of 20 bikes" do
-      expect(subject.capacity).to eq 20
-    end
-
     it "can store 0 to 20 bikes" do
       expect(subject.bikes).to eq []
     end
@@ -16,6 +12,7 @@ describe DockingStation do
        # implicitly defined version
        # it { is_expected.to respond_to :release_bike }
     end
+
     it "should release a working bike" do
       expect(Bike.new.working?).to eq true
     end
@@ -23,7 +20,7 @@ describe DockingStation do
     describe '#dock' do
       it "raises and error when full" do
         20.times {subject.dock(Bike.new)}
-        expect { subject.dock(Bike.new) }.to raise_error "Docking station full!" if subject.bikes.length == 20
+        expect { subject.dock(Bike.new) }.to raise_error "Docking station full!" if subject.bikes.length == DockingStation::DEFAULT_CAPACITY
       end
     end
     describe '#release_bike' do

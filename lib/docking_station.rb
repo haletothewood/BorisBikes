@@ -2,10 +2,10 @@ require './lib/bike.rb'
 
 class DockingStation
 
+DEFAULT_CAPACITY = 20
 attr_accessor :bikes, :capacity
 
-  def initialize (capacity = 20)
-    @capacity = capacity
+  def initialize
     @bikes = []
   end
 
@@ -22,7 +22,7 @@ attr_accessor :bikes, :capacity
   private
 
   def full?
-    @bikes.length == 20
+    @bikes.length == DEFAULT_CAPACITY
   end
 
   def empty?
