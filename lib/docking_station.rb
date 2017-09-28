@@ -10,13 +10,23 @@ attr_accessor :bikes, :capacity
   end
 
   def release_bike
-    fail "Sorry, no bikes!" if @bikes.length == 0
+    fail "Sorry, no bikes!" if empty?
     @bikes.pop
   end
 
   def dock(bike)
-    fail "Docking station full!" if @bikes.length == 20
+    fail "Docking station full!" if full?
     @bikes << bike
+  end
+
+  private
+
+  def full?
+    @bikes.length == 20
+  end
+
+  def empty?
+    @bikes.length == 0
   end
 
 end
