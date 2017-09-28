@@ -33,3 +33,17 @@ Successes:
 Struggles:
 - Finding the right documentation or information applicable to our problem at hand.
 - Ensuring the passing test is accuratley testing the feature correctly.
+
+#### Day Three
+
+Pair Partner: [Jon](https://github.com/jonsanders101)
+
+Successes:
+- 
+-
+-
+-
+
+Struggles:
+-
+-
