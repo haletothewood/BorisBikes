@@ -2,6 +2,10 @@ require 'docking_station'
 
 describe DockingStation do
 
+  it "should allow maintainer to set its capacity" do
+    expect(DockingStation.new(10).capacity).to eq 10
+  end
+
     it "can store 0 to 20 bikes" do
       expect(subject.bikes).to eq []
     end
