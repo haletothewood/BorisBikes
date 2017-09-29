@@ -5,8 +5,8 @@ class DockingStation
 DEFAULT_CAPACITY = 20
 attr_accessor :bikes, :capacity
 
-  def initialize(capacity = DEFAULT_CAPACITY)
-    @bikes = []
+  def initialize(capacity = DEFAULT_CAPACITY) #bikes which is an array)
+    @bikes = [] # = bikes
     @capacity = capacity
   end
 
@@ -19,6 +19,10 @@ attr_accessor :bikes, :capacity
     fail "Docking station full!" if full?
     @bikes << bike
   end
+
+  #def working_bike_count
+    #@bikes.each {|bike| bike.working?}.count
+  #end
 
   private
 
