@@ -7,7 +7,7 @@ describe DockingStation do
   end
 
   it "should release a working bike" do
-    expect(Bike.new.working?).to eq true
+    expect(Bike.new.broken?).to eq true
   end
 
   describe '#dock' do
@@ -15,7 +15,7 @@ describe DockingStation do
       15.times {subject.dock(Bike.new)}
       expect(subject.bikes.length).to eq 15
     end
-    it "raises and error when full" do
+    it "raises an error when full" do
       20.times {subject.dock(Bike.new)}
       expect { subject.dock(Bike.new) }.to raise_error "Docking station full!" if subject.bikes.length == DockingStation::DEFAULT_CAPACITY
     end
