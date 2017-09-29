@@ -31,5 +31,10 @@ describe DockingStation do
       subject.release_bike
       expect(subject.bikes.length).to eq (before - 1)
     end
+    it "will not release a broken bike" do
+      subject.dock(Bike.new)
+      expect(subject.release_bike).to raise_error "Sorry, bike broken!" if subject.bikes[-1].broken?
+    end
+
   end
 end

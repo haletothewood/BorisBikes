@@ -12,6 +12,7 @@ attr_accessor :bikes, :capacity
 
   def release_bike
     fail "Sorry, no bikes!" if empty?
+    fail "Sorry, bike broken!" if @bikes[-1].broken?
     @bikes.pop
   end
 
